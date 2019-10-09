@@ -25,4 +25,4 @@ export const objectToArray = (obj) => {
     Object.keys(obj).forEach((i) => tempArray.push(obj[i]));
 
     return tempArray;
-}   
+}
