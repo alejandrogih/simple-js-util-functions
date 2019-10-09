@@ -1,5 +1,5 @@
 /* 
-*  @param arr array - The array to group.
+ * @param arr array - The array to group.
  * @param property string - The object propperty to group by.
  */
 
@@ -15,3 +15,14 @@ export const groupBy = function (arr, property) {
 
         return temp;
 }
+
+/* 
+ * @param obj Object - The object to create an array from.
+ */
+export const objectToArray = (obj) => {
+    const tempArray = [];
+
+    Object.keys(obj).forEach((i) => tempArray.push(obj[i]));
+
+    return tempArray;
+}   
